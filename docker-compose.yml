@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  apache_php_service:
+    build: apache_php
+    volumes:
+      - ./apache_php/src:/var/www/html
+    ports:
+      - 10.2.4.87:80:80
