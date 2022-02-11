@@ -2,6 +2,10 @@ version: '3.8'
 services:
   apache_php_service:
     build: apache_php
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
     volumes:
       - ./apache_php/src:/var/www/html
     ports:
