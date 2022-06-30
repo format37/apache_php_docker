@@ -9,4 +9,5 @@ services:
     volumes:
       - ./apache_php/src:/var/www/html
     ports:
-      - 10.2.4.87:80:80
+      - 0.0.0.0:80:80
+      - 0.0.0.0:443:443
